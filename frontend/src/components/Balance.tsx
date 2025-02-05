@@ -21,15 +21,16 @@ const Balance: React.FC = () => {
 
   return (
     <div>
-      <h2>Consultar Balance</h2>
+      <h2 className="h2-balance">Check Balance</h2>
       <input
         type="text"
-        placeholder="Dirección"
+        placeholder="Address"
         value={address}
-        onChange={(e) => setAddress(e.target.value)}
-      />
-      <button onClick={handleCheckBalance}>Consultar</button>
-      <p>Balance: {balance}</p>
+        onChange={(e) => setAddress(e.target.value)}      />
+      <button 
+      onClick={handleCheckBalance}>
+        Consult</button>
+      <p >Balance:<span>{balance}</span></p>
     </div>
   );
 };

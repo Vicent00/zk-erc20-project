@@ -40,3 +40,21 @@
 .read-the-docs {
   color: #888;
 }
+
+.h2-balance {
+  font-size: 2em;
+  margin: 0.5em 0;
+  margin-top: 1em;;
+}
+
+input{
+  padding: 0.5em;
+  margin: 0.5em;
+  border-radius: 0.5em;
+  border: 1px solid #ccc;
+}
+
+.h2-transfer{
+  font-size: 2em;
+  margin-top: 2em 0;
+}

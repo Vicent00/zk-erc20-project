@@ -8,7 +8,7 @@ const Transfer: React.FC = () => {
   const handleTransfer = async () => {
     try {
       await transferTokens(to, amount);
-      alert(`Transferencia de ${amount} tokens a ${to} realizada con éxito`);
+      alert(`Transference from ${amount} tokens to ${to} successful done`);
     } catch (error) {
       if (error instanceof Error) {
         console.error(error.message);
@@ -21,20 +21,20 @@ const Transfer: React.FC = () => {
 
   return (
     <div>
-      <h2>Transferir Tokens</h2>
+      <h2 className="h2-transfer">Transfer tokens</h2>
       <input
         type="text"
-        placeholder="Dirección destino"
+        placeholder="Destination address"
         value={to}
         onChange={(e) => setTo(e.target.value)}
       />
       <input
         type="number"
-        placeholder="Cantidad"
+        placeholder="Amount"
         value={amount}
         onChange={(e) => setAmount(e.target.value)}
       />
-      <button onClick={handleTransfer}>Transferir</button>
+      <button onClick={handleTransfer}>Transfer</button>
     </div>
   );
 };

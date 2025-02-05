@@ -8,17 +8,17 @@ const WalletConnect: React.FC = () => {
     try {
       const connectedAccount = await connectWallet();
       setAccount(connectedAccount); // Guarda la cuenta conectada
-      alert(`Conectado con éxito: ${connectedAccount}`);
+      alert(`Connected successfully: ${connectedAccount}`);
     } catch (error) {
-      console.error("Error al conectar MetaMask:", error);
-      alert("No se pudo conectar con MetaMask");
+      console.error("Error by connecting Metamask:", error);
+      alert("Error: unexpected response");
     }
   };
 
   return (
     <div>
       <button onClick={handleConnect}>
-        {account ? `Conectado: ${account}` : "Conectar MetaMask"}
+        {account ? `Connected: ${account}` : "Connecting Metamask"}
       </button>
     </div>
   );
