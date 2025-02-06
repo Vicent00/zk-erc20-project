@@ -174,7 +174,7 @@ contract MyToken is ERC20 {
 ---
 
 ## 📜 License
-This project is licensed under **MIT**, meaning you are free to use and modify it. 🚀
+This project is licensed under the **LGPL-3.0-only** license. See the `LICENSE` file for more details.
 
 
 
