@@ -17,7 +17,7 @@ const WalletConnect: React.FC = () => {
 
   return (
     <div>
-      <button onClick={handleConnect}>
+      <button className="transfer-button" onClick={handleConnect}>
         {account ? `Connected: ${account}` : "Connecting Metamask"}
       </button>
     </div>
