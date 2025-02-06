@@ -1,11 +1,11 @@
 import Web3 from "web3"; // Importar web3
-import abi from "./abi/abi.json"; // ABI del contrato
+import abi from "./abi/abi.json"; // ABI del contrato(Pon el tuyo al desplegar el contrato)
 
 // Verificar si MetaMask está disponible y configurar Web3
 const web3 = new Web3((window as any).ethereum || "https://arb1.arbitrum.io/rpc");
 
 // Dirección del contrato desplegado en Arbitrum One
-const contractAddress = "0x2A536bA18778ec0Bd44a358e7aeA60a765994112"; // Cambia por tu dirección real
+const contractAddress = "0xYourContractAddress"; // Cambia por tu dirección real
 
 // Crear una instancia del contrato
 const contract = new web3.eth.Contract(abi as any, contractAddress);
